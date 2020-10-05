@@ -27,7 +27,7 @@ while True:
     elif check.lower() == "cmd2":
         print (CMD2())
 
-    elif check.lower() == "git":
+    elif check.lower() == "thx":
         print (git())
         
     elif check.lower() == "uwu":
@@ -37,14 +37,19 @@ while True:
     elif check.lower() == "UWU":
         print (UwU())
 
-     elif check.lower() == "UwU":
+    elif check.lower() == "UwU":
         print (UwU())
      
     
-      elif check.lower() == "q":
+    elif check.lower() == "q":
         break
     
     elif check.lower() == "quit":
         break
-        
-#UwU
+########################################################        
+#Don't cheat on an exam,it's bad                       #
+#                                                      #
+#UwU                                                   #
+#                                                      #
+#Created by NeKro git: https://github.com/NeKroFR      #  
+########################################################

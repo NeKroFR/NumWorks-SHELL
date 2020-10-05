@@ -3,14 +3,17 @@
 def HelloWorld():
     return "HELLO WORLD"
 
-def CMD2():
-    return "This is a secound command"
+def CMD():
+    return "This is a command"
 
-def git():
+def thx():
     return "Thx NeKro for this software "
 
 def UwU():
     return "UwU "
+
+def index():
+    return "#######\nhi\ncmd/command\nthx\nuwu\nq/quit to exit\n#######"
 
 
 
@@ -20,27 +23,28 @@ def UwU():
 while True:
 
     check = input("")
-    if check.lower() == "hello":
+    if check.lower() == "hi":
         print (HelloWorld())
     
-
-    elif check.lower() == "cmd2":
-        print (CMD2())
+    elif check.lower() == "cmd":
+        print (CMD())
+#you can take several spellings for one function
+    elif check.lower() == "COMMAND":
+        print (CMD())
 
     elif check.lower() == "thx":
-        print (git())
-        
+        print (thx())
+    
+
     elif check.lower() == "uwu":
         print (UwU())
-#you can take several spellings for one function
-
-    elif check.lower() == "UWU":
-        print (UwU())
-
-    elif check.lower() == "UwU":
-        print (UwU())
      
-    
+    elif check.lower() == "h":
+        print (index())
+
+    elif check.lower() == "help":
+        print (index())
+
     elif check.lower() == "q":
         break
     

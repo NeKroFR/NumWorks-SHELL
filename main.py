@@ -1,7 +1,7 @@
 '''
 Created by NeKro
 '''
-import shutil
+import os
 
 while True:
     choice = input("\najouter un nouveau mot : 0\ncompiler : 1\nquit : q\n")
@@ -17,7 +17,7 @@ while True:
 
     if choice == "1":
         print ("compiling...\n")
-        #delete cmd.py
+        os.remove(cmd.py)
         compil = open('def.py', "a")
         #copy all
         compil.close()
@@ -31,8 +31,8 @@ while True:
         compil = open('cmd.py', "a")
         #paste
         compil.close()
-        #delete def.py
-        #delete main.py
+        os.remove(def.py)
+        os.remove(word.py)
         print ("done\n")
 
 

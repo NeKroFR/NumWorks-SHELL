@@ -1,6 +1,8 @@
 '''
 Created by NeKro
 '''
+import shutil
+
 while True:
     choice = input("\najouter un nouveau mot : 0\ncompiler : 1\nquit : q\n")
     if choice == "0":
@@ -14,7 +16,14 @@ while True:
         def_file.close()
 
     if choice == "1":
-        print ("compile\n")
+        print ("compiling...\n")
+        compil = open('def.py', "a")
+        #copy all
+        compil.close()
+        compil = open('cmd.py', "a")
+        #paste
+        compil.write("\n\n\n#return commands\n\nwhile True:\n\n    check = input('')\n    if check.lower() == 'q':\n        break\n\n")
+        compil.close()
 
     if choice == "q":
         break

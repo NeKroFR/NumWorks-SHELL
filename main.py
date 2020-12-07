@@ -17,6 +17,7 @@ while True:
 
     if choice == "1":
         print ("compiling...\n")
+        #delete cmd.py
         compil = open('def.py', "a")
         #copy all
         compil.close()
@@ -24,6 +25,16 @@ while True:
         #paste
         compil.write("\n\n\n#return commands\n\nwhile True:\n\n    check = input('')\n    if check.lower() == 'q':\n        break\n\n")
         compil.close()
+        compil = open('word.py', "a")
+        #copy all
+        compil.close()
+        compil = open('cmd.py', "a")
+        #paste
+        compil.close()
+        #delete def.py
+        #delete main.py
+        print ("done\n")
+
 
     if choice == "q":
         break

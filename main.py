@@ -18,25 +18,43 @@ while True:
 
     if choice == "1":
         print ("compiling...\n")
-        os.remove(cmd.py)
-        compil = open('def.py', "w")
-        with open(compil) as document:
+        try:
+            os.remove("cmd.py")
+            compil = open('def.py', "w")
+            #with open(compil) as document:
             
-        compil.close()
-        compil = open('cmd.py', "a")
-        #paste
-        compil.write("\n\n\n#return commands\n\nwhile True:\n\n    check = input('')\n    if check.lower() == 'q':\n        break\n\n")
-        compil.close()
-        compil = open('word.py', "a")
-        #copy all
-        compil.close()
-        compil = open('cmd.py', "a")
-        #paste
-        compil.close()
-        os.remove(def.py)
-        os.remove(word.py)
-        print ("done\n")
-
+            compil.close()
+            compil = open('cmd.py', "a")
+            #paste
+            compil.write("\n\n\n#return commands\n\nwhile True:\n\n    check = input('')\n    if check.lower() == 'q':\n        break\n\n")
+            compil.close()
+            compil = open('word.py', "a")
+            #copy all
+            compil.close()
+            compil = open('cmd.py', "a")
+            #paste
+            compil.close()
+            os.remove("def.py")
+            os.remove("word.py")
+            print ("done\n")
+        except:
+            compil = open('def.py', "w")
+            #with open(compil) as document:
+            
+            compil.close()
+            compil = open('cmd.py', "a")
+            #paste
+            compil.write("\n\n\n#return commands\n\nwhile True:\n\n    check = input('')\n    if check.lower() == 'q':\n        break\n\n")
+            compil.close()
+            compil = open('word.py', "a")
+            #copy all
+            compil.close()
+            compil = open('cmd.py', "a")
+            #paste
+            compil.close()
+            os.remove("def.py")
+            os.remove("word.py")
+            print ("done\n")
 
     if choice == "q":
         break

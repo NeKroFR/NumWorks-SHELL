@@ -1,6 +1,7 @@
 '''
 Created by NeKro
 '''
+
 import os
 
 while True:
@@ -18,8 +19,9 @@ while True:
     if choice == "1":
         print ("compiling...\n")
         os.remove(cmd.py)
-        compil = open('def.py', "a")
-        #copy all
+        compil = open('def.py', "w")
+        with open(compil) as document:
+            
         compil.close()
         compil = open('cmd.py', "a")
         #paste

@@ -17,21 +17,22 @@ while True:
         def_file.close()
 
     if choice == "1":
+        name = input("file name: ")
+        name = (name +".py")
         print ("compiling...\n")
         try:
-            os.remove("cmd.py")
+            os.remove(name)
             compil = open('def.py', "w")
-            #with open(compil) as document:
-            
+            #copy all content    
             compil.close()
-            compil = open('cmd.py', "a")
+            compil = open(name, "a")
             #paste
             compil.write("\n\n\n#return commands\n\nwhile True:\n\n    check = input('')\n    if check.lower() == 'q':\n        break\n\n")
             compil.close()
             compil = open('word.py', "a")
-            #copy all
+            #copy all  content
             compil.close()
-            compil = open('cmd.py', "a")
+            compil = open(name, "a")
             #paste
             compil.close()
             os.remove("def.py")
@@ -39,17 +40,16 @@ while True:
             print ("done\n")
         except:
             compil = open('def.py', "w")
-            #with open(compil) as document:
-            
+            #copy all content    
             compil.close()
-            compil = open('cmd.py', "a")
+            compil = open(name, "a")
             #paste
             compil.write("\n\n\n#return commands\n\nwhile True:\n\n    check = input('')\n    if check.lower() == 'q':\n        break\n\n")
             compil.close()
             compil = open('word.py', "a")
-            #copy all
+            #copy all  content
             compil.close()
-            compil = open('cmd.py', "a")
+            compil = open(name, "a")
             #paste
             compil.close()
             os.remove("def.py")
